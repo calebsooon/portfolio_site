@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caleb Soon | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Coding Portfolio</h1>
-        <nav>
-            <a href="#projects">Projects</a>
-            <a href="#about">About Me</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="assets/images/profile.jpg" alt="Caleb Soon" />
+      <h1>Caleb Soon</h1>
+      <p>Web Developer</p>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div id="project-list">
-            <!-- Projects will go here -->
-        </div>
+  <main class="main-content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a 2nd Year student in Nanyang Technological University, studying Business and Computer Science. I have an interest in Finance and Computing in Finance. I am familiar with Python, HTML, C and C++.
+      </p>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m a coding enthusiast with interest in web development and data analysis.</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <!-- <img src="assets/images/project1.jpg" alt="Project 1" />
+          <h3>Project One</h3>
+          <p>A web application that allows users to track their tasks efficiently.</p>
+          <a href="https://github.com/calebsooon/project-one" target="_blank">View Code</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/images/project2.jpg" alt="Project 2" />
+          <h3>Project Two</h3>
+          <p>An interactive website showcasing dynamic content loading.</p>
+          <a href="https://github.com/calebsooon/project-two" target="_blank">View Code</a>
+        </div>
+         Add more project cards as needed -->
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: sooncaleb@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/calebsooon" target="_blank">calebsooon</a></p>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sooncaleb@gmail.com">sooncaleb@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/calebsooon" target="_blank">calebsooon</a></p>
     </section>
-
-    <script src="script.js"></script>
+  </main>
 </body>
 </html>
+
