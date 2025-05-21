@@ -1,59 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caleb Soon | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
-  <aside class="sidebar">
-    <div class="profile">
-      <img src="assets/images/profile.jpg" alt="Caleb Soon" />
-      <h1>Caleb Soon</h1>
-      <p>Web Developer</p>
-    </div>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </aside>
-
-  <main class="main-content">
-    <section id="about" class="section fade-in">
-      <h2>About Me</h2>
-      <p>
-        I’m a 2nd Year NTU Business & Computer Science student passionate about Finance and Computing in Finance. I work with Python, C++, and web technologies.
-      </p>
-    </section>
-
-    <section id="projects" class="section fade-in">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/images/project1.jpg" alt="Project 1" />
-          <h3>Portfolio Website</h3>
-          <p>A personal portfolio site to showcase my coding projects.</p>
-          <a href="https://github.com/calebsooon/portfolio_site" target="_blank">View Code</a>
-        </div>
-        <div class="project-card">
-          <img src="assets/images/project2.jpg" alt="Project 2" />
-          <h3>MRT Route Planner</h3>
-          <p>Python Turtle app to visualize and calculate MRT routes in Singapore.</p>
-          <a href="https://github.com/calebsooon/mrt-project" target="_blank">View Code</a>
+  <main>
+    <aside class="sidebar">
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="assets/images/profile.jpg" alt="Caleb Soon" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name">Caleb Soon</h1>
+          <p class="title">Web Developer</p>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <section id="contact" class="section fade-in">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sooncaleb@gmail.com">sooncaleb@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/calebsooon" target="_blank">calebsooon</a></p>
-    </section>
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="resume active" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section>
+          <h3>Education</h3>
+          <p>2nd Year Business and Computer Science student at Nanyang Technological University.</p>
+          <h3>Skills</h3>
+          <ul>
+            <li>Python, C++, HTML/CSS, JavaScript</li>
+            <li>Data analysis, Financial modeling</li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects-grid">
+          <div class="project-card">
+            <img src="assets/images/project1.jpg" alt="Project 1" />
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio site to showcase my coding projects.</p>
+            <a href="https://github.com/calebsooon/portfolio_site" target="_blank">View Code</a>
+          </div>
+          <div class="project-card">
+            <!-- <img src="assets/images/project2.jpg" alt="Project 2" />
+            <h3>MRT Route Planner</h3>
+            <p>Python Turtle app to visualize MRT routes in Singapore.</p>
+            <a href="https://github.com/calebsooon/mrt-project" target="_blank">View Code</a>
+          </div> -->
+        </section>
+      </article>
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section>
+          <p>Email: <a href="mailto:sooncaleb@gmail.com">sooncaleb@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/calebsooon" target="_blank">calebsooon</a></p>
+        </section>
+      </article>
+    </div>
   </main>
 </body>
 </html>
+
 
 
