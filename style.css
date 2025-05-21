@@ -233,3 +233,56 @@ article.active {
   margin-top: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+p {
+  margin-bottom: 16px; /* or 20px for more space */
+  line-height: 1.6;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  border-left: 2px solid #444;
+  padding-left: 20px;
+}
+
+.timeline-entry {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+.timeline-entry .dot {
+  position: absolute;
+  top: 6px;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  border: 3px solid #151515;
+}
+
+.timeline-entry .role {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.timeline-entry .date {
+  color: #f1c40f;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.timeline-entry .desc {
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.timeline-title {
+  color: #3498db;
+  margin: 30px 0 15px;
+  font-size: 1.4em;
+}
