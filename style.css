@@ -192,3 +192,31 @@ article.active {
   color: #3498db;
 }
 
+.sidebar-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-box img {
+  border-radius: 50%;
+  border: 3px solid #3498db;
+}
+
+.name {
+  margin-top: 15px;
+  font-size: 1.6em;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 0.95em;
+  color: #aaaaaa;
+}
+
+.content-box {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
