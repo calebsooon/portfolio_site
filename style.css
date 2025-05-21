@@ -135,4 +135,60 @@ a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-  
+
+/* Navbar styling for top bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-link {
+  color: #ecf0f1;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Articles (Resume, Portfolio, Contact) */
+article {
+  display: none;
+  animation: fadeIn 0.8s ease;
+}
+
+article.active {
+  display: block;
+}
+
+.h2.article-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
